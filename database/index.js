@@ -1,9 +1,7 @@
 const mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost/houseListings');
-var faker = require('faker')
+mongoose.connect('mongodb://localhost:27017/houseListings', { useNewUrlParser: true });
 // mongoose.Promise = global.Promise;
 const db = mongoose.connection;
-
 
 db.once('open', function(){
   console.log('Connection has been made.');
@@ -12,7 +10,7 @@ db.on('error', function(error){
   console.log('Connection error:', error);
 })
 
-var houseDetailsSchema = mongoose.Schema({
+var houseDetailsSchema = new mongoose.Schema({
   houseName: String,
   numberOfGuests: Number,
   numberOfBedrooms: Number,
@@ -28,32 +26,28 @@ var houseDetailsSchema = mongoose.Schema({
 });
 
 var houseDetail = mongoose.model('houseDetail', houseDetailsSchema);
-var count = 0
-for(count; count < 100; count++){
 
-  var testListing = new houseDetail({
-    houseName: faker.lorem.sentence,
-    numberOfGuests: faker.random.number({'min': 2, 'max': 5});,
-    numberOfBedrooms: faker.random.number({'min': 1, 'max': 3});,
-    numberOfBeds: faker.random.number({'min': 1, 'max': 3});,
-    numberOfBaths: faker.random.number({'min': 1, 'max': 3});,
-    Highlights: faker.lorem.sentence,
-    description : faker.lorem.paragraphs,
-    Amenities: faker.lorem.word,
-    HostProfile: faker.lorem.paragraphs,
-    numberOfReviews: faker.random.number({'min': 1, 'max': 10});,
-    numberOfReferences: faker.random.number({'min': 1, 'max': 5});,
-    Neighborhood: faker.lorem.paragraph
+var singleHouseRetreival = function (houseID, callback) {
+
+  console.log('singleHouseRetreival called');
+
+  houseDetail.findOne({ houseName: houseID }, function (err, houseDetail) {
+    callback(houseDetail);
   });
-  testListing.save()
-}
-module.exports = houseDetail;
+  //use mongo method to retreive the information
+  //findOne()
+  //return your callback with the results of the findOne()
+};
+module.exports.singleHouseRetreival = singleHouseRetreival;
+module.exports.houseDetail = houseDetail;
 /*
+  console.log(houseDetail.findOne({ houseName: "Ducimus aut officiis qui voluptas rerum quaerat." }, function (err, adventure) {}));
 --first step is making sure I can load data--
 create my schema
 create model
 create function for creating
 
+houseID
 
 faker.random.number({'min': 10, 'max': 50});
 
