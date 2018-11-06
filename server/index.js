@@ -26,8 +26,6 @@ app.listen(port, function() {
 
 
 // {
-
-
     // res.send(houseDetail);
 //   houseName: String,
 //   numberOfGuests: Number,
