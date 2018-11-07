@@ -3,20 +3,29 @@ import React from 'react';
 class Overview extends React.Component {
   constructor (props) {
     super(props);
-    this.state = {
-
-    }
+    this.state = {}
   }
   render(){
-
-      return (
-      <div>{this.props.data.houseName}<br/>
-      {this.props.data.numberOfGuests}<br/>
-      {this.props.data.numberOfBedrooms}<br/>
-      {this.props.data.numberOfBeds}<br/>
-      {this.props.data.numberOfBaths}<br/>
-      {this.props.data.Highlights}<br/>
-      {this.props.data.description}</div>
+    return (
+      <div>
+        <h1 className="header">{this.props.data.houseName}</h1>
+        <div className="numberOf">
+          <i className="fas fa-users"></i><span className="icons">{this.props.data.numberOfGuests} guests</span>
+          <i className="fas fa-door-open"></i><span className="icons">{this.props.data.numberOfBedrooms} bedrooms</span>
+          <i className="fas fa-bed"></i><span className="icons">{this.props.data.numberOfBeds} beds</span>
+          <i className="fas fa-bath"></i><span className="icons">{this.props.data.numberOfBaths} baths</span>
+        </div>
+        <div className="highlights"> <div className="title">Highlights</div> <br/>
+        {this.props.data.Highlights}</div>
+        <div className="description"><div className="title">The space</div> <br/>{this.props.data.description}</div>
+        <div className="contact">Contact host</div>
+        <div className="border-line"></div>
+        <div className="amenities"><div className="title">Amenities</div><br/>
+          <i className="fas fa-laptop"></i><span className="amenity-items">Laptop friendly work space</span><br/>
+          <i className="fas fa-wifi"></i><span className="amenity-items">Wifi</span><br/>
+          <i className="fas fa-tv"></i><span className="amenity-items">TV</span><br/>
+        </div>
+      </div>
     )
   }
 }
