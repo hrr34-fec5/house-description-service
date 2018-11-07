@@ -1,7 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import axios from 'axios';
-import Overview from './Components/overview.jsx'
+import Overview from './Components/overview.jsx';
+import BelowReviews from './Components/belowReviews.jsx';
 
 class App extends React.Component {
   constructor (props) {
@@ -24,7 +25,12 @@ class App extends React.Component {
   render () {
     return (
       <div>
-      <Overview data={this.state.currentHouse} />
+        <div>
+          <Overview data={this.state.currentHouse} />
+        </div>
+        <div>
+          <BelowReviews data={this.state.currentHouse} />
+        </div>
       </div>
       );
   }
