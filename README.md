@@ -4,10 +4,10 @@
 
 ## Related Projects
 
-  - https://github.com/teamName/repo
-  - https://github.com/teamName/repo
-  - https://github.com/teamName/repo
-  - https://github.com/teamName/repo
+  - https://github.com/hrr34-fec5/house-description-service
+  - https://github.com/hrr34-fec5/photo-stream2
+  - https://github.com/hrr34-fec5/reviews-service
+  - https://github.com/hrr34-fec5/grounded-n-grits-calendar-component
 
 ## Table of Contents
 
@@ -17,7 +17,12 @@
 
 ## Usage
 
-> Some usage instructions
+First time only: 
+After installing dependencies, but before using, compile the component using webpack. The script `npm run dev:react` will create a bundle. 
+
+Always:
+1. Ensure that MongoDB is running actively (e.g., on a Mac, open a terminal and run `$ mongod`).
+2. Start the server with `npm start`.
 
 ## Requirements
 
@@ -36,4 +41,9 @@ From within the root directory:
 npm install -g webpack
 npm install
 ```
+### Seeding Database
+For testing and development purposes, it may be beneficial to seed the database with fake data.
 
+Included is a script to aid in this process.
+
+After instlaling dependencies and proceeding through the usage steps, run the following script: `db:setup`. 
