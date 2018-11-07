@@ -46,4 +46,4 @@ For testing and development purposes, it may be beneficial to seed the database 
 
 Included is a script to aid in this process.
 
-After instlaling dependencies and proceeding through the usage steps, run the following script: `db:setup`. 
+After instlaling dependencies and proceeding through the usage steps, run the following script: `npm run db:setup`. 
