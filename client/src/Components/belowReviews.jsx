@@ -8,13 +8,13 @@ class belowReviews extends React.Component {
   render(){
     return (
       <div>
-        <div className="description"><div className="title">The neighborhood</div> <br/>{this.props.data.Neighborhood}
+        <div className="description"><div className="title">The neighborhood</div> <br/>{this.props.neighborhood}
         </div>
         <div className="description"><div className="title">Hosted by Steve<br/>
-        <i className="fas fa-star"></i><span className="icons">{this.props.data.numberOfGuests} Reviews</span>
-        <i className="fas fa-user-check"></i><span className="icons">{this.props.data.numberOfReferences} References</span>
+        <i className="fas fa-star"></i><span className="icons">{this.props.numberOfReviews} Reviews</span>
+        <i className="fas fa-user-check"></i><span className="icons">{this.props.numberOfReferences} References</span>
         </div><br/>
-        {this.props.data.HostProfile}
+        {this.props.hostProfile}
         </div>
       </div>
       )
