@@ -1,0 +1,167 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Overview App should render correctly 1`] = `
+<div>
+  <div>
+    <Overview />
+  </div>
+  <div>
+    <belowReviews />
+  </div>
+</div>
+`;
+
+exports[`Overview BelowReviews should render correctly 1`] = `
+<div>
+  <div
+    className="description"
+  >
+    <div
+      className="title"
+    >
+      The neighborhood
+    </div>
+     
+    <br />
+  </div>
+  <div
+    className="description"
+  >
+    <div
+      className="title"
+    >
+      Hosted by Steve
+      <br />
+      <i
+        className="fas fa-star"
+      />
+      <span
+        className="icons"
+      >
+         Reviews
+      </span>
+      <i
+        className="fas fa-user-check"
+      />
+      <span
+        className="icons"
+      >
+         References
+      </span>
+    </div>
+    <br />
+  </div>
+</div>
+`;
+
+exports[`Overview Overview should render correctly 1`] = `
+<div>
+  <h1
+    className="header"
+  />
+  <div
+    className="numberOf"
+  >
+    <i
+      className="fas fa-users"
+    />
+    <span
+      className="icons"
+    >
+       guests
+    </span>
+    <i
+      className="fas fa-door-open"
+    />
+    <span
+      className="icons"
+    >
+       bedrooms
+    </span>
+    <i
+      className="fas fa-bed"
+    />
+    <span
+      className="icons"
+    >
+       beds
+    </span>
+    <i
+      className="fas fa-bath"
+    />
+    <span
+      className="icons"
+    >
+       baths
+    </span>
+  </div>
+  <div
+    className="highlights"
+  >
+     
+    <div
+      className="title"
+    >
+      Highlights
+    </div>
+     
+    <br />
+  </div>
+  <div
+    className="description"
+  >
+    <div
+      className="title"
+    >
+      The space
+    </div>
+     
+    <br />
+  </div>
+  <div
+    className="contact"
+  >
+    Contact host
+  </div>
+  <div
+    className="border-line"
+  />
+  <div
+    className="amenities"
+  >
+    <div
+      className="title"
+    >
+      Amenities
+    </div>
+    <br />
+    <i
+      className="fas fa-laptop"
+    />
+    <span
+      className="amenity-items"
+    >
+      Laptop friendly work space
+    </span>
+    <br />
+    <i
+      className="fas fa-wifi"
+    />
+    <span
+      className="amenity-items"
+    >
+      Wifi
+    </span>
+    <br />
+    <i
+      className="fas fa-tv"
+    />
+    <span
+      className="amenity-items"
+    >
+      TV
+    </span>
+    <br />
+  </div>
+</div>
+`;
