@@ -26,21 +26,22 @@ class App extends React.Component {
       <div>
         <div>
           <Overview
-          houseName={this.state.currentHouse.houseName}
-          numberOfGuests={this.state.currentHouse.numberOfGuests}
-          numberOfBedrooms={this.state.currentHouse.numberOfBedrooms}
-          numberOfBeds={this.state.currentHouse.numberOfBeds}
-          numberOfBaths={this.state.currentHouse.numberOfBaths}
-          highlights={this.state.currentHouse.Highlights}
-          description={this.state.currentHouse.description}
+            houseName={this.state.currentHouse.houseName}
+            numberOfGuests={this.state.currentHouse.numberOfGuests}
+            numberOfBedrooms={this.state.currentHouse.numberOfBedrooms}
+            numberOfBeds={this.state.currentHouse.numberOfBeds}
+            numberOfBaths={this.state.currentHouse.numberOfBaths}
+            highlights={this.state.currentHouse.Highlights}
+            description={this.state.currentHouse.description}
+            data={this.state.currentHouse}
           />
         </div>
         <div>
           <BelowReviews
-          neighborhood={this.state.currentHouse.Neighborhood}
-          numberOfReviews={this.state.currentHouse.numberOfReviews}
-          numberOfReferences={this.state.currentHouse.numberOfReferences}
-          hostProfile={this.state.currentHouse.HostProfile} />
+            neighborhood={this.state.currentHouse.Neighborhood}
+            numberOfReviews={this.state.currentHouse.numberOfReviews}
+            numberOfReferences={this.state.currentHouse.numberOfReferences}
+            hostProfile={this.state.currentHouse.HostProfile} />
         </div>
       </div>
       );
