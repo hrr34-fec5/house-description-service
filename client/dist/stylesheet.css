@@ -1,0 +1,35 @@
+* {
+  font-family: Arial;
+}
+.icons {
+  margin-right: 16px;
+  margin-left: 4px;
+}
+
+.highlights {
+  border-width: 2px;
+  border-style: solid;
+  border-color: grey;
+  padding: 5px 5px 5px 5px;
+  margin: 10px 0px 10px 0px;
+}
+
+.contact {
+  color: teal;
+  margin: 20px 0px 20px 0px;
+}
+
+.border-line {
+  border-bottom: 1px solid grey;
+  margin: 0px 0px 20px 0px;
+}
+
+.title {
+  font-weight: bold;
+  margin: 10px 0px 0px 0px;
+}
+
+.amenity-items {
+  margin-bottom: 10px;
+  margin-left: 5px;
+}
